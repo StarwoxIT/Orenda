@@ -6,7 +6,6 @@ import Footer from "../Footer/Footer";
 const PrivacyPolicy = () => {
   return (
     <div className="privacy-container">
-      <Navbar />
       <div className="privacy-wrapper">
         <h1>Privacy Policy</h1>
         <p>
@@ -172,7 +171,6 @@ const PrivacyPolicy = () => {
           </div>
         </div>
       </div>
-      <Footer/>
     </div>
   );
 };

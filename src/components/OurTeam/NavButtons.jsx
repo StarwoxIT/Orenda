@@ -1,31 +1,22 @@
-import { useState } from 'react';
 import { useSwiper } from 'swiper/react';
 
-const NavButtons = ({
-  setItemOffset,
-  setEndOffSet,
-  itemsPerPage,
-  numberOfSlides
-}) => {
+const NavButtons = () => {
   const swiper = useSwiper();
 
-  const [prevIndex, setPrevIndex] = useState(1);
+  let numberOfSlides = swiper.slides.length;
+  let activeIndex = swiper.activeIndex + 1;
+
   return (
     <div className="max-w-7xl mx-auto">
       <div className="p-4 flex items-center justify-center md:justify-end gap-6">
         <button
-          disabled={prevIndex == 1}
+          disabled={activeIndex == 1}
           className={`${
-            prevIndex == 1
+            activeIndex == 1
               ? 'bg-[#B0B0B0] cursor-not-allowed'
               : 'bg-orenda-purple'
-          } rounded-full p-2.5`}
-          onClick={() => {
-            setItemOffset((prevOffset) => prevOffset - itemsPerPage);
-            setEndOffSet((prevOffset) => prevOffset - itemsPerPage);
-            setPrevIndex((index) => (index == 1 ? index : index - 1));
-            swiper.slidePrev();
-          }}
+          } rounded-full ~p-1.5/2.5`}
+          onClick={() => swiper.slidePrev()}
         >
           <svg
             width="32"
@@ -46,21 +37,16 @@ const NavButtons = ({
           </svg>
         </button>
         <span className="font-bold">
-          {prevIndex} / {numberOfSlides}
+          {activeIndex} / {numberOfSlides}
         </span>
         <button
-          disabled={prevIndex === numberOfSlides}
+          disabled={activeIndex === numberOfSlides}
           className={`${
-            prevIndex == numberOfSlides ? 'bg-[#B0B0B0] cursor-not-allowed' : 'bg-orenda-purple'
-          } rounded-full p-2.5`}
-          onClick={() => {
-              setItemOffset((prevOffset) => prevOffset + itemsPerPage);
-              setEndOffSet((prevOffset) => prevOffset + itemsPerPage);
-            setPrevIndex((index) =>
-              index == numberOfSlides ? index : index + 1
-            );
-            swiper.slideNext();
-          }}
+            activeIndex == numberOfSlides
+              ? 'bg-[#B0B0B0] cursor-not-allowed'
+              : 'bg-orenda-purple'
+          } rounded-full ~p-1.5/2.5`}
+          onClick={() => swiper.slideNext()}
         >
           <svg
             width="32"

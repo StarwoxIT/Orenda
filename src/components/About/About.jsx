@@ -11,7 +11,6 @@ import Footer from '../Footer/Footer';
 import Treat from './Treat/Treat';
 const About = () => (
   <>
-    <Navbar/>
     <main className='font-body'>
       <AboutIntro />
       <HR />
@@ -23,7 +22,6 @@ const About = () => (
       <Treat/>
       <GetStarted />
     </main>
-    <Footer/>
   </>
 );
 

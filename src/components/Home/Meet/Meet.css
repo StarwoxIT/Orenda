@@ -17,6 +17,12 @@
   gap: 4em;
 }
 
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
 .left h1 {
   font-family: OggExtraBold;
   font-weight: 700;

@@ -11,8 +11,9 @@ const Navbar = () => {
 
             <ul className="nav-list">
                 <li><NavLink to="/">Home</NavLink></li>
-                <li><NavLink to="/ourteam">Our Team</NavLink></li>
-                <li>Insurance</li>
+                <li><NavLink to="/Our Team">Our Team</NavLink></li>
+                <NavLink to='/Insurance'><li>Insurance</li></NavLink>
+                
                 <li><NavLink to="/about">About</NavLink></li>
                 <li>Blog</li>
                 <li><NavLink to="/privacypolicy">Privacy policy</NavLink></li>

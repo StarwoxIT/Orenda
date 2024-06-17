@@ -17,7 +17,6 @@ const Home = () => {
   return (
     <div className="home_container mx-auto">
         <div className="home_wrapper mx-auto">
-            <Navbar/>
             <Hero/>
             <Network/>
             <Providers/>
@@ -28,7 +27,6 @@ const Home = () => {
             <Journey/>
             <Location/>
             <Frequent/>
-            <Footer/>
         </div>
     </div>
   )

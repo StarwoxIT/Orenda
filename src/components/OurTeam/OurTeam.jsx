@@ -1,21 +1,17 @@
-import Navbar from "../Navbar/Navbar";
-import OurTeamIntro from './OurTeamIntro';
-import Providers from "./Providers";
-import BecomeProvider from "../About/BecomeProvider";
-import Team from "./Team";
+import BecomeProvider from '../About/BecomeProvider';
 import ContactUs from './ContactUs';
-import Footer from "../Footer/Footer";
+import OurTeamIntro from './OurTeamIntro';
+import Providers from './Providers';
+import Team from './Team';
 
 const OurTeam = () => {
   return (
     <>
-        <Navbar/>
-        <OurTeamIntro />
-        <Providers itemsPerPage={12}/>
-        <BecomeProvider bg="white"/>
-        <Team itemsPerPage={8}/>
-        <ContactUs />
-        <Footer/>
+      <OurTeamIntro />
+      <Providers itemsPerPage={12} numberOfColumns={4} />
+      <BecomeProvider bg="white" />
+      <Team itemsPerPage={8} />
+      <ContactUs />
     </>
   );
 };
