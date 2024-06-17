@@ -1,0 +1,58 @@
+@font-face {
+  font-family: OggExtraBold;
+  src: url(../../../fonts/OggText-Extrabold-BF646c18fc56511.otf);
+}
+
+.handle-container {
+    background-image: url('../../../assets/background.png'); /* Update the path to the correct path of your uploaded image */
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    padding: 2em 0; /* Add padding to the container to create space around the content */
+  }
+
+.handle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4em;
+    margin-bottom: 2em;
+  }
+  
+  .handle-wrapper .handle p {
+    font-family: DM Sans;
+    font-weight: 700;
+    line-height: 34px;
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 1em;
+    width: 85%;
+  }
+  .handle button {
+    font-family: "open sans";
+    padding: 11px 35px 11px 35px;
+    border-radius: 30px;
+    border: 1px solid #2E0086;
+    color: #fff;
+    background-color: #2E0086;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 1em;
+    width: 27em;
+    outline: #2E0086;
+  }
+  .handle button:hover {
+    color: #2E0086;
+    background-color: #fff;
+    outline: #2E0086;
+  }
+  
+  button:hover .colored-img {
+    filter: invert(80%) sepia(100%) saturate(6700%) hue-rotate(258deg) brightness(93%) contrast(110%);
+  }

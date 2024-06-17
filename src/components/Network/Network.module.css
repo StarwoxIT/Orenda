@@ -1,0 +1,55 @@
+ @font-face {
+  font-family: OggBold;
+  src: url(../../fonts/OggText-Bold-BF646c18fc4aabb.ttf);
+}
+
+.network_container {
+  margin-bottom: 5em;
+}
+
+.network_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider .marquee_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4em;
+}
+
+.slider .marquee_main img {
+  padding-right: 9em;
+}
+
+.header h3{
+  justify-content: center;
+  display: flex;
+  font-family: OggBold;
+  font-size: 34px;
+  margin-bottom: 2em;
+  color: #070707;
+}
+.texts {
+  justify-content: center;
+  display: flex;
+  font-family: OggBold;
+  font-size: 25px;
+  color: #AEAEAE;
+  margin-bottom: 2em;
+}
+.nets {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 6em;
+  margin-bottom: 2.7em;
+}
+.text {
+  justify-content: center;
+  display: flex;
+  font-family: "DM sans";
+  font-size: 1.3em;
+} 
+

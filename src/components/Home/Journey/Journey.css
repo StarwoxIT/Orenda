@@ -1,0 +1,170 @@
+@font-face {
+    font-family: OggExtraBold;
+    src: url(../../../fonts/OggText-Extrabold-BF646c18fc56511.otf);
+  }
+  
+  .journey-container {
+    padding-top: 3em;
+    padding-bottom: 5em;
+    margin-bottom: 5em;
+    background-color: #fff;
+  }
+  .journey-wrapper h1 {
+    font-family: OggExtraBold;
+    font-size: 38px;
+  }
+  .journey-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 88%;
+    margin-top: 3em;
+    margin-bottom: 5em;
+  }
+  
+  .icon-prop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    justify-content: space-between;
+    gap: 1em;
+  }
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    background-color: #f2f2f2;
+    width: 90px;
+    border-radius: 100px;
+  }
+  .icon img {
+    width: 40px;
+  }
+  .icon-prop h3 {
+    font-family: OggExtraBold;
+  }
+  .icon-prop p {
+    font-family: "DM sans";
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+  }
+  hr {
+    background-color: #d9d9d9;
+    width: 80%;
+  }
+  
+  
+  .patient {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: fit-content;
+      max-height: 900px;
+      min-width: 700px;
+      width: 1000px;
+      max-width: 1350px;
+      margin-top: 4em;
+      border-radius: 15px;
+      /* padding-top: 4em; */
+      border: 1px solid #D4D4D4;
+    }
+  
+  .existing-patient {
+    background-image: url("../../../assets/blur.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 100%;
+    height: 75vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.9em;
+    padding: 3em;
+    color: #fff;
+    align-items: center;
+  }
+  .existing-patient p {
+    font-family: "open sans";
+    font-size: 15px;
+  }
+  .existing-patient h2 {
+    font-family: "Nunito sans";
+    letter-spacing: 1px;
+  }
+  .existing-patient button {
+      font-family: 'open sans';
+      font-size: 13px;
+      font-weight: 500;
+      color: #fff;
+      background: none;
+      border: 1px solid #fff;
+      padding: 8px 16px 8px 16px;
+      border-radius: 25px;
+      width: 26em;
+      display: flex;
+      justify-content: center;
+      gap: .4em;
+      transition: background-color 0.3s;
+  }
+  .existing-patient button:hover {
+      background-color: #2E0086;
+      border: #2E0086;
+  }
+  
+  .new-patient {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    width: 100%;
+    height: 75vh;
+  }
+  
+  .new-patient h2 {
+      font-family: OggExtraBold;
+      font-size: 23px;
+      color: #070707;
+  
+  }
+  .new-patient p {
+      font-family: 'open sans';
+      font-weight: 500;
+      font-size: 15px;
+  }
+  .new-patient button {
+      font-family: 'open sans';
+      font-size: 13px;
+      font-weight: 500;
+      color: #2E0086;
+      background: none;
+      border: 1px solid #2E0086;
+      padding: 8px 20px 8px 20px;
+      border-radius: 25px;
+      width: 26em;
+      display: flex;
+      justify-content: center;
+      gap: .4em;
+      transition: background-color 0.3s;
+  }
+  .new-patient button:hover{
+      background-color: #2E0086;
+      color: #fff;
+  }
+  button:hover .color-img {
+      filter: brightness(0) invert(1);
+    }

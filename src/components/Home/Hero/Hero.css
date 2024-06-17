@@ -1,0 +1,121 @@
+@font-face {
+  font-family: OggExtraBold;
+  src: url(../../../fonts/OggText-Extrabold-BF646c18fc56511.otf);
+}
+
+.hero-container{
+  margin-bottom: 7em;
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-wrapper .hero-content {
+  width: 710px;
+  margin-left: 5em;
+  margin-top: 6em;
+}
+.hero-wrapper .texts h1 {
+  font-family: OggExtraBold;
+  font-size: 47px;
+  line-height: 67px;
+  padding-bottom: 0.6em;
+  color: #070707;
+}
+.hero-wrapper .texts p {
+  font-family: "open sans";
+  padding-bottom: 0.8em;
+  line-height: 67px;
+}
+
+.hero-content button {
+  background-color: white;
+  outline: none;
+  padding: .4em .9em;
+  font-size: 1rem;
+  border-radius: 1.5em;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+  color: #2e0086;
+  border: 1px solid #2e0086;
+  font-family: "open sans";
+  margin-bottom: 2em;
+}
+.hero-content button:hover {
+  background-color: #2e0086;
+  color: #fff;
+}
+.hero-wrapper img {
+  width: 572px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+}
+.items-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border-radius: 10px;
+  border: 1px solid #c9c9c9;
+  padding: 1.1em ;
+  width: 260px;
+  position: relative;
+}
+.items-right p {
+  font-family: "DM sans";
+  font-weight: 700;
+  font-size: 20px;
+}
+.items-right-contents {
+  display: flex;
+  align-items: center;
+  font-family: "open sans";
+  gap: 8em;
+}
+.items-right-contents p img {
+  margin-left: .2em;
+}
+.items-right-contents p {
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.items-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-radius: 10px;
+    border: 1px solid #c9c9c9;
+    padding: 1.1em ;
+    width: 260px;
+    position: relative;
+    height: 130px;
+    margin-top: 48px;
+}
+
+.items-left p { 
+    font-family: 'DM sans';
+    font-weight: 600;
+    /* line-height: 53px; */
+    display: flex;
+    align-items: center;
+}
+.items-left-img{
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.items-left-contents{
+    font-family: 'open sans';
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    gap: 6em;
+}

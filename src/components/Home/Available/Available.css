@@ -1,0 +1,38 @@
+@font-face {
+  font-family: OggExtraBold;
+  src: url(../../../fonts/OggText-Extrabold-BF646c18fc56511.otf);
+}
+
+.available-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+}
+
+.available-wrapper h1 {
+  font-family: OggExtraBold;
+  font-size: 40px;
+  font-weight: 700;
+  color: #070707;
+}
+
+.available-wrapper p {
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.04px;
+  text-align: left;
+}
+
+.avail-img {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+}
+.avail-img img {
+    width: 270px;
+}

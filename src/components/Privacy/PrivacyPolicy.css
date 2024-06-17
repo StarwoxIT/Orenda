@@ -1,0 +1,66 @@
+@font-face {
+    font-family: OggExtraBold;
+    src: url(../../fonts/OggText-Extrabold-BF646c18fc56511.otf);
+  }
+  @font-face {
+    font-family: OggBold;
+    src: url(../../fonts/OggText-Bold-BF646c18fc4aabb.ttf);
+  }
+  
+  .privacy-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    flex-direction: column;
+    padding: 5em 11em;
+  }
+  
+  .privacy-wrapper h1 {
+    font-family: OggExtraBold;
+    text-align: center;
+    color: #070707;
+    font-size: 38px;
+  }
+  .privacy-wrapper p {
+    font-family: DM Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+  }
+  .privacy-wrapper p span {
+    color: #818181;
+  }
+  h3 {
+    font-family: OggBold;
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 28px;
+    text-align: left;
+  }
+  
+  .privacy-contain {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4em;
+    margin-top: 2em;
+  }
+  .privacy-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+  }
+  .privacy-text p, li {
+    font-family: DM Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+  }
+  .privacy-text p span, li span{
+      text-decoration: underline;
+      color: #000;
+      font-weight: 600;
+  }
+  
