@@ -1,9 +1,8 @@
-
 import Logo from '../../assets/logo.png'
 
 const Footer = () => {
   return (
-    <footer className='font-footer bg-m-footer md:bg-md-footer bg-footer-positions md:bg-md-footer-positions bg-no-repeat px-5 pb-[2.81rem]'>
+    <footer className='font-footer bg-m-footer md:bg-md-footer bg-footer-positions md:bg-md-footer-positions bg-no-repeat px-5 pb-[2.81rem] border-t border-[#E2E2E2]'>
       <div className='max-w-7xl mx-auto ~pt-9/[5.75rem] ~text-md/base md:flex md:justify-between md:~gap-[1.69rem]/[5.06rem]'>
         <div className="flex justify-between gap-[1.69rem] mb-6 md:~gap-[1.69rem]/[5.06rem]">
           <div className="flex flex-col md:flex-row md:~gap-[1.69rem]/[5.06rem] justify-between">

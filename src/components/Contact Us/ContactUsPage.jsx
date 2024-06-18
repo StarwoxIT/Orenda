@@ -11,11 +11,11 @@ import cigna from '../../assets/cigna_insurance.png';
 import compsych from '../../assets/compsych_insurance.png';
 import abc from '../../assets/abc_insurance.png';
 import multiplan from '../../assets/multiplan_insurance.png';
+import FAQ from './FAQ';
 
 import Newsletter from './Newsletter';
 import Input from '../Input';
 import { useForm } from 'react-hook-form';
-import Frequent from '../Home/Frequent/Frequent';
 
 const ContactUsPage = () => {
   const { register, handleSubmit, watch } = useForm();
@@ -254,7 +254,7 @@ const ContactUsPage = () => {
       </main>
       <Team itemsPerPage={12} />
       <ContactUs />
-      <Frequent/>
+      <FAQ />
       <Newsletter />
     </>
   );
