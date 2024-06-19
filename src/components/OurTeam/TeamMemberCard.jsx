@@ -8,7 +8,7 @@ const TeamMemberCard = ({ member }) => {
           alt={member.name}
         />
       </div>
-      <h3 className="font-semibold ~text-sm/lg font-open-sans mt-3 text-center md:text-start">
+      <h3 className="font-semibold ~text-sm/lg font-open-sans mt-3 text-center md:text-justify">
         {member.name}
       </h3>
       <div className="flex gap-2 items-center text-center">

@@ -90,7 +90,7 @@ const FormSteps = ({ register, watch }) => {
   } else {
     return (
       <>
-        <div className="~text-sm/lg relative text-left bg-inherit field__input">
+        <div className="~text-sm/lg relative text-justify bg-inherit field__input">
           <input
             id="insuranceCarrier"
             key={'insuranceCarrier'}
