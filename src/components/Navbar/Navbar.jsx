@@ -7,7 +7,9 @@ const Navbar = () => {
   return (
     <div className="nav-container">
         <div className="nav-wrapper">
-            <img src={logo} alt="" />
+        <div className="~w-[5rem]/[7.8125rem] ~h-[1.75rem]/[2.8rem] flex-shrink-0">
+          <img className="h-full" src={logo} alt="Orenda Psychiatry" />
+        </div>
 
             <ul className="nav-list">
                 <li><NavLink to="/">Home</NavLink></li>

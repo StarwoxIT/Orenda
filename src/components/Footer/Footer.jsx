@@ -6,9 +6,9 @@ const Footer = () => {
       <div className='max-w-7xl mx-auto ~pt-9/[5.75rem] ~text-md/base md:flex md:justify-between md:~gap-[1.69rem]/[5.06rem]'>
         <div className="flex justify-between gap-[1.69rem] mb-6 md:~gap-[1.69rem]/[5.06rem]">
           <div className="flex flex-col md:flex-row md:~gap-[1.69rem]/[5.06rem] justify-between">
-            <div className="~w-[5rem]/[7.8125rem] ~h-[1.75rem]/[2.8125rem]">
-                <img className="" src={Logo} alt="Orenda Psychiatry" />
-            </div>
+          <div className="~w-[5rem]/[7.8125rem] ~h-[1.75rem]/[2.8rem] flex-shrink-0">
+          <img className="h-full" src={Logo} alt="Orenda Psychiatry" />
+        </div>
             <div className='mb-[2.63rem]'>
               <h2 className="footer__heading">Mailing Address</h2>
               <p className='max-w-[14.5rem]'>347 fifth Ave Suite 1402 - 235, New York, NY 10016</p>
