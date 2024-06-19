@@ -6,7 +6,7 @@ export default {
   content: { files: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'], extract },
   theme: {
     screens,
-
+    fontSize,
     extend: {
       backgroundImage: {
         'm-footer':
