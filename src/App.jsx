@@ -22,13 +22,13 @@ function App() {
     <ScrollToTop>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Home/>} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Our Team" element={<OurTeam/>} /> 
-          <Route path="/contact" element={<ContactUsPage />} />
-          <Route path="/Insurance" element={<Insurance />} />
-          <Route path="/privacypolicy" element={<Privacy/>} />
-          <Route path="/Provider/:index" element={<ProviderInfo/>} />
+          <Route index element={<Home/>} />
+          <Route path="About" element={<About />} />
+          <Route path="Our Team" element={<OurTeam/>} /> 
+          <Route path="contact" element={<ContactUsPage />} />
+          <Route path="Insurance" element={<Insurance />} />
+          <Route path="privacypolicy" element={<Privacy/>} />
+          <Route path="Provider/:index" element={<ProviderInfo/>} />
         </Route>
         <Route path="/Assessment1" element={<Assessment1/>} />
         <Route path="/Assessment2" element={<Assessment2/>} />
