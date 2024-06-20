@@ -37,6 +37,9 @@ export default {
         heading: ["'Ogg Text TRIAL'", 'serif'],
         'dm-sans': ['"DM Sans"', 'sans-serif']
       },
+      gridTemplateColumns: {
+        team: 'repeat(4, minmax(0, 15.625rem))'
+      },
       listStyleImage: {
         dot: 'url("/src/assets/disc.svg")'
       },

@@ -259,20 +259,6 @@ const providersData = [
     I provide a holistic outlook in my practice. I believe that there should be a partnership between provider and patient and I strive to create a welcoming, compassionate, and open environment feel heard and understood. I am focused on helping my patients improve wellbeing and functioning by improving confidence and developing a patient centered strategy.`
   },
   {
-    image: '../src/assets/providers/main/17.png',
-    name: 'Christelle Dubic',
-    credentials: 'PMHNP-BC | NP',
-    agesSeen: {
-      adults: '18 - 64 yrs'
-    },
-    statesLicensed: ['New York', 'New Jersey', '2 more'],
-    availability: 'Available in 1 week',
-    bookingLink: 'https://booking.url',
-    about: `I am a board certified and experienced adult psychiatric and mental health nurse practitioner currently practicing at Orenda Psychiatry. I specialize in helping patients with anxiety, obsessive-compulsive disorder, hyperactive disorders, and panic attacks. I open for consultations to patients in Smyrna and Brooklyn.
-
-    I provide a holistic outlook in my practice. I believe that there should be a partnership between provider and patient and I strive to create a welcoming, compassionate, and open environment feel heard and understood. I am focused on helping my patients improve wellbeing and functioning by improving confidence and developing a patient centered strategy.`
-  },
-  {
     image: '../src/assets/providers/main/18.png',
     name: 'Cassandra Williams',
     credentials: 'NP | PMHNP',

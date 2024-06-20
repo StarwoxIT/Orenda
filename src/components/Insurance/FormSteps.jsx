@@ -94,7 +94,7 @@ const FormSteps = ({ register, watch }) => {
           <input
             id="insuranceCarrier"
             key={'insuranceCarrier'}
-            className="block outline-none bg-transparent w-full border-b border-[#D1D1D1] pb-2"
+            className="block outline-none bg-transparent w-full border-b border-[#D1D1D1] pb-4 forLabel:pb-2"
             type={fieldType}
             ref={ref}
             name={name}

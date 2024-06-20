@@ -55,7 +55,7 @@ html *::after {
 }
 
 @layer components {
-  main p {
+  main p, main li {
     @apply ~text-sm/xl font-dm-sans text-justify;
   }
   .heading {

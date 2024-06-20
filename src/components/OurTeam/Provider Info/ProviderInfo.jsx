@@ -56,7 +56,7 @@ const ProviderInfo = () => {
       <main className="px-4 font-dm-sans ~mt-7/[5.5rem]">
         <div className="max-w-7xl mx-auto">
           <div className="rounded-lg sm:border sm:border-[#EFEBDF]">
-            <div className="flex flex-col md:rounded-t-lg md:flex-row sm:~gap-8/[3.5rem] sm:border md:border-[#EFEBDF]">
+            <div className="flex flex-col md:rounded-t-lg md:flex-row md:~gap-0/[3.5rem] sm:border md:border-[#EFEBDF]">
               <div className="md:order-last bg-[#f1f1f1] rounded-t-lg w-full md:flex sm:flex-col md:justify-end md:max-w-[39.25rem] relative">
                 {provider.availability && (
                   <div className="rounded-lg border w-fit border-[#E1EEE4] bg-[#F0FDF3] py-2 ~px-0.5/[0.62rem] ~text-[0.7rem]/xs font-dm-sans font-medium absolute ~top-2/[1.37rem] ~left-2/6">
@@ -64,12 +64,12 @@ const ProviderInfo = () => {
                   </div>
                 )}
                 <img
-                  className="md:min-w-[80%] mx-auto max-h-[38.5rem] h-auto max-w-[10.48rem] block"
+                  className="md:min-w-[80%] mx-auto max-h-[38.5rem] h-auto ~/md:~max-w-[10.48rem]/[22rem] block"
                   src={provider.image}
                   alt={provider.name}
                 />
               </div>
-              <div className="md:max-w-[50%] sm:~px-2/10 sm:py-6">
+              <div className="md:max-w-[50%] sm:~px-2/8 sm:py-6">
                 <h1 className="~text-base/[2rem] font-bold ~mt-[0.63rem]/[2.56rem] mb-2">
                   {provider.name}
                 </h1>
@@ -127,7 +127,7 @@ const ProviderInfo = () => {
                   </h2>
                   <p>{showStatesLicensed(provider.statesLicensed)}</p>
                 </div>
-                <div className="hidden sm:block sm:~px-2/4 sm:~py-3/6">
+                <div className="hidden space-y-4 sm:block sm:~px-2/4 sm:~py-3/6">
                   <ProviderInfoUl
                     h2="Education & Background"
                     listArray={educationAndBackground}
@@ -150,7 +150,7 @@ const ProviderInfo = () => {
 
               <HR />
 
-              <div className="sm:border border-t-0 sm:border-[#EFEBDF] sm:basis-1/2">
+              <div className="sm:border space-y-4 sm:space-y-0 mb-4 sm:mb-0 border-t-0 sm:border-[#EFEBDF] sm:basis-1/2">
                 <div className="sm:border-b  sm:border-[#EFEBDF] sm:~px-4/8 sm:~py-5/10">
                   <ProviderInfoUl
                     h2="Focus Areas"
@@ -166,7 +166,7 @@ const ProviderInfo = () => {
                   />
                 </div>
               </div>
-              <div className="sm:hidden">
+              <div className="sm:hidden space-y-4">
                 <ProviderInfoUl
                   h2="Education & Background"
                   listArray={educationAndBackground}
@@ -187,7 +187,7 @@ const ProviderInfo = () => {
               </div>
             </div>
 
-            <div className="sm:~px-3/6 sm:~py-4/8">
+            <div className="sm:~px-3/6 ~py-4/8">
               <h2 className="font-bold ~text-sm/xl ~mb-2/4">
                 Reviews from Clients
               </h2>

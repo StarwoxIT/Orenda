@@ -68,13 +68,13 @@ const ProvidersInAbout = () => {
             {indices.map((index, i) => (
               <div
                 key={i}
-                className="provider__images bg-[#F1F1F1] ~xs/xl:~size-[3.2rem]/[5.625rem] rounded-lg overflow-hidden flex flex-col justify-end"
+                className="bg-[#F1F1F1] ~xs/xl:~size-[3.2rem]/[5.625rem] rounded-lg overflow-hidden flex flex-col justify-end"
               >
                 <img
                   ref={image}
                   src={providersData[index].image}
                   alt={`Provider ${index}`}
-                  className="w-full h-full object-cover"
+                  className="provider__images w-full h-full object-cover"
                 />
               </div>
             ))}
