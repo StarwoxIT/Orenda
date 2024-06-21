@@ -55,7 +55,7 @@ const ProvidersInAbout = () => {
     <div className="px-5">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="heading mb-4">Meet Our Providers</h2>
-        <p className="~mt-4/6 ~mb-6/[3.25rem] max-w-[65.75rem] mx-auto">
+        <p className="~mt-4/6 ~mb-6/[3.25rem] max-w-[65.75rem] mx-auto text-center">
           We believe in providing compassionate and comprehensive mental health
           care to our clients, and we recognize that each person is unique and
           requires personalized care. We understand that seeking therapy can be
