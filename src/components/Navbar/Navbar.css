@@ -25,7 +25,7 @@
 
 .nav-list {
   display: flex;
-  gap: 4em;
+  gap: 3em;
   list-style-type: none;
   font-family: 'DM sans';
 }
@@ -56,4 +56,25 @@
 .nav-list li:hover{
   color: #2E0086;
   font-weight: 600;
+}
+
+.hamburger{
+  display: none;
+}
+
+@media screen and (max-width: 1174px){
+  .nav-list{
+    gap: 2em;
+  }
+}
+
+@media screen and (max-width: 1038px){
+  .nav-list, .contact{
+    display: none;
+  }
+
+  .hamburger{
+    display: flex;
+    cursor: pointer;
+  }
 }

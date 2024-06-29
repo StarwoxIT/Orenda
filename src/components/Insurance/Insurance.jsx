@@ -3,7 +3,6 @@ import close from '../../assets/close_icon.svg';
 import { useRef, useState, createContext, useEffect } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-
 import { useForm } from 'react-hook-form';
 
 gsap.registerPlugin(useGSAP);
@@ -12,7 +11,14 @@ export const PageNumberContext = createContext();
 
 const Insurance = () => {
   //React Hook Form
-  const { register, handleSubmit, watch } = useForm();
+  const {
+    register,
+    handleSubmit,
+    watch,
+    reset,
+    formState: { errors, isDirty, isValid },
+    clearErrors
+  } = useForm();
 
   //Declare page state and gsap animation Page scope
   const [pageNumber, changePageNumber] = useState(1);
@@ -39,9 +45,28 @@ const Insurance = () => {
     }
   };
 
+  //Control modal opening
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal(true);
+    window.scrollTo(0, 0);
+    document.body.style.overflow = 'hidden';
+  };
+  const closeModal = () => {
+    setShowModal(false);
+    document.body.style.overflow = 'auto';
+    reset();
+    changePageNumber(1);
+    animateFields();
+  };
+
   //handle form submission
   const onSubmit = (data) => {
-    if (pageNumber === 3) console.log(data);
+    if (pageNumber === 3) {
+      console.log(data);
+      openModal();
+    }
   };
 
   //modal table data
@@ -69,8 +94,11 @@ const Insurance = () => {
   //Page Navigation Functions
   const pageNext = () => {
     if (pageNumber < 3) {
-      changePageNumber((prevPageNumber) => prevPageNumber + 1);
-      animateFields();
+      if (isDirty && isValid) {
+        changePageNumber((prevPageNumber) => prevPageNumber + 1);
+        animateFields();
+        setTimeout(() => clearErrors(), 1);
+      }
     }
   };
 
@@ -81,27 +109,16 @@ const Insurance = () => {
     }
   };
 
-  //Control Submit (Next) button
-  const [buttonType, setButtonType] = useState('button');
-  useEffect(() => {
-    if (pageNumber === 3) {
-      //let the button submit the form at the last page
-      setButtonType('submit');
-    } else {
-      setButtonType('button');
-    }
-  }, [pageNumber]);
-
   //Insurance Component return:
   return (
     <PageNumberContext.Provider value={pageNumber}>
-      <div className="relative font-dm-sans">
-        {false && (
-          <div className="absolute px-5 inset-0 max-h-screen bg-[#070707B3] z-50 grid place-items-center">
+      <div className="font-dm-sans">
+        {showModal && (
+          <div className="fixed px-5 inset-0 max-h-screen bg-[#070707B3] z-50 grid place-items-center">
             <div className="w-full bg-[#FAFAFA] rounded-3xl max-w-[41.44rem] ~px-4/10 ~pt-6/[2.38rem] ~pb-[2.69rem]/[3.38rem]">
               <h2 className="flex justify-between font-medium ~text-lg/[1.75rem] ~mb-8/[2.81rem]">
                 <span>Insurance Details</span>
-                <button>
+                <button onClick={() => closeModal()}>
                   <img src={close} alt="close modal" />
                 </button>
               </h2>
@@ -141,12 +158,14 @@ const Insurance = () => {
               onSubmit={handleSubmit(onSubmit)}
               className="overflow-y-hidden bg-[#FAFAFA] max-w-[41.44rem] mx-auto rounded-3xl ~xs/xl:~px-3/10 ~pt-6/10 ~pb-[2.13rem]/[4.44rem] border border-[#D9D9D9]"
             >
-              <div className="flex justify-between gap-2 items-center ~mb-10/[4.13rem]">
+              <div className="flex justify-between gap-4 items-center ~mb-10/[4.13rem]">
                 <div>
                   <h2 className="font-dm-sans font-bold ~text-lg/[1.75rem] mb-1">
                     {showHeading(pageNumber)}
                   </h2>
-                  <p className="~text-xs/sm">{showSubHeading(pageNumber)}</p>
+                  <p className="~text-xs/sm text-left">
+                    {showSubHeading(pageNumber)}
+                  </p>
                 </div>
                 <p className="~text-xs/base text-nowrap">
                   Step {pageNumber} of 3
@@ -154,17 +173,18 @@ const Insurance = () => {
               </div>
 
               <div className="stuff grid ~gap-y-10/20 bg-inherit transition-all duration-300 ease-in-out pe-8 sm:pe-0">
-                <FormSteps register={register} watch={watch} />
+                <FormSteps register={register} watch={watch} errors={errors} />
               </div>
 
               <div className="~mt-10/16 grid gap-6 font-semibold ~text-sm/base font-open-sans">
                 <button
-                  type={buttonType}
+                  type="submit"
                   onClick={() => pageNext()}
                   className="border w-full max-w-[31.5rem] border-orenda-purple rounded-3xl px-4 ~py-2/[0.62rem] block mx-auto text-orenda-purple hover:bg-orenda-purple hover:text-white transition cursor-pointer"
                 >
-                  {pageNumber == 3 ? 'Verify' : 'Proceed'}
+                  {pageNumber === 3 ? 'Verify' : 'Proceed'}
                 </button>
+
                 {pageNumber > 1 && (
                   <button
                     type="button"
@@ -174,6 +194,9 @@ const Insurance = () => {
                     Back
                   </button>
                 )}
+                {/* <button onClick={() => clearErrors()} type="button">
+                  clear
+                </button> */}
               </div>
             </form>
           </div>

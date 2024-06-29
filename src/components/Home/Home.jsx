@@ -3,15 +3,16 @@ import './Home.css'
 import Navbar from '../Navbar/Navbar'
 import Hero from './Hero/Hero'
 import Network from '../Network/Network'
-import Providers from './Providers/Providers'
+import Treat from '../../components/About/Treat/Treat'
 import Meet from './Meet/Meet'
-import Treat from './Treat/Treat'
 import Available from './Available/Available'
 import Handle from './Handle/Handle'
 import Journey from './Journey/Journey'
-import Footer from '../Footer/Footer'
 import Location from './Location/Location'
 import Frequent from './Frequent/Frequent'
+import Providers from '../OurTeam/Providers'
+import Phead from './Phead/Phead'
+import Hear from './Hear/Hear'
 
 const Home = () => {
   return (
@@ -19,11 +20,14 @@ const Home = () => {
         <div className="home_wrapper mx-auto">
             <Hero/>
             <Network/>
-            <Providers/>
+            <Phead/>
+            <Providers itemsPerPage={12} numberOfColumns={5}/>
             <Meet/>
             <Treat/>
+
             <Handle/>
             <Available/>
+            <Hear/>
             <Journey/>
             <Location/>
             <Frequent/>

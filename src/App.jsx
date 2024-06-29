@@ -14,6 +14,9 @@ import Assessment1 from './components/Assessment/Assessment1/Assessment1';
 import Assessment2 from './components/Assessment/Assessment2/Assessment2';
 import Assessment3 from './components/Assessment/Assessment3/Assessment3';
 import Assessment4 from './components/Assessment/Assessment4/Assessment4';
+import Blog from './components/Blog/Blogs';
+import Bloginfo from './components/Blog/Bloginfo';
+import BecomeProviderPage from './components/BecomeProviderPage/BecomeProviderPage';
 
 
 
@@ -29,6 +32,9 @@ function App() {
           <Route path="Insurance" element={<Insurance />} />
           <Route path="privacypolicy" element={<Privacy/>} />
           <Route path="Provider/:index" element={<ProviderInfo/>} />
+          <Route path="blogs" element={<Blog />} />
+          <Route path="blog info" element={<Bloginfo />} />
+          <Route path="become provider" element={<BecomeProviderPage />} />
         </Route>
         <Route path="/Assessment1" element={<Assessment1/>} />
         <Route path="/Assessment2" element={<Assessment2/>} />
