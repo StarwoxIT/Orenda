@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import "./Available.css";
 import newyork from "../../../assets/newyork.png";
 import newjersey from "../../../assets/newjersey.png";
@@ -12,14 +12,14 @@ const Available = () => {
         <h1>Available Locations</h1>
         <p>We currently serve in these 4 states</p>
         <div className="avail-img">
-            <img src={newyork} alt="" />
-            <img src={connecticut} alt="" />
-            <img src={newjersey} alt="" />
-            <img src={massachusetts} alt="" />
+          <img src={newyork} alt="" />
+          <img src={connecticut} alt="" />
+          <img src={newjersey} alt="" />
+          <img src={massachusetts} alt="" />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Available
+export default Available;

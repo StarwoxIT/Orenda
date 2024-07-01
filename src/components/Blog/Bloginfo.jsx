@@ -1,15 +1,15 @@
-import React from 'react';
-import bloginfoframe from '../../assets/bloginfoframe.png';
-import divarrleft from '../../assets/divarrleft.png';
-import divarr from '../../assets/divarr.png';
-import './Blogs.css';
-import worry from '../../assets/worry.png';
-import profile from '../../assets/profile.png';
-import x from '../../assets/X.png';
-import LinkedIn from '../../assets/LinkedIn.png';
-import facebook from '../../assets/Facebook.png';
-import Messages from '../../assets/Messages.png';
-import blogmobile from '../../assets/blogmobile.png';
+import React from "react";
+import bloginfoframe from "../../assets/bloginfoframe.png";
+import divarrleft from "../../assets/divarrleft.png";
+import divarr from "../../assets/divarr.png";
+import "./Blogs.css";
+import worry from "../../assets/worry.png";
+import profile from "../../assets/profile.png";
+import x from "../../assets/X.png";
+import LinkedIn from "../../assets/LinkedIn.png";
+import facebook from "../../assets/Facebook.png";
+import Messages from "../../assets/Messages.png";
+import blogmobile from "../../assets/blogmobile.png";
 
 const Bloginfo = () => {
   return (
@@ -26,7 +26,7 @@ const Bloginfo = () => {
             Topic A
           </button>
           <p className="text-bold  text-black flex gap-1 items-center mt-[] mb-[]">
-            <img src={divarrleft} alt="" /> 30 February 2024{' '}
+            <img src={divarrleft} alt="" /> 30 February 2024{" "}
             <img src={divarr} alt="" />
           </p>
         </div>
@@ -65,15 +65,11 @@ const Bloginfo = () => {
           daily functioning.
         </p>
 
-        <h2 className="text-[1.2rem] font-semibold mb-4 text-center md:text-justify font-heading pt-6 w-[70%] mx-auto md:w-[100%]">
+        <h2 className="text-[1.2rem] font-semibold mb-4 text-center md:text-left font-heading pt-6 w-[70%] mx-auto md:w-[100%]">
           Recognizing the Symptoms: Signs to Watch For
         </h2>
         <div className=" justify-between gap-16 lg:flex">
-          <img
-            src={bloginfoframe}
-            alt=""
-            className=" block mx-auto sm:my-4 md:my-5 lg:my-0"
-          />
+          <img src={bloginfoframe} alt=""  className=" block mx-auto sm:my-4 md:my-5 lg:my-0"/>
           <p className="leading-[1.9rem] text-fluid">
             Identifying anxiety disorders can be challenging, as symptoms may
             manifest differently from person to person. Common signs include
@@ -101,7 +97,7 @@ const Bloginfo = () => {
           provide relief.
         </p>
 
-        <h2 className=" font-semibold mb-4 text-[1.2rem] font-heading pt-6 text-center md:text-justify w-[70%] mx-auto md:w-[100%]">
+        <h2 className=" font-semibold mb-4 text-[1.2rem] font-heading pt-6 text-center md:text-left w-[70%] mx-auto md:w-[100%]">
           The Role of Online Psychiatry: Accessible and Effective Care
         </h2>
         <p className="mb-4 leading-[1.9rem] text-fluid">
@@ -126,11 +122,7 @@ const Bloginfo = () => {
           hope and empowerment.
         </p>
         <img className="md:hidden" src={blogmobile} alt="" />
-        <img
-          className="w-[100%] h-auto my-6 md:block hidden "
-          src={worry}
-          alt="Worry Less"
-        />
+        <img className="w-[100%] h-auto my-6 md:block hidden " src={worry} alt="Worry Less" />
 
         <hr className="w-[100%] h-[2px] bg-gray-400 mt-24" />
 
@@ -155,9 +147,7 @@ const Bloginfo = () => {
       </div>
       <div className="bg-gray-100 ~pt-10/[4.63rem] ~pb-10/[6.75rem] px-4 mt-6 ">
         <div className="max-w-[1260px] mx-auto bg-[#ECF5EB] border border-white rounded-2xl  flex justify-center items-center flex-col py-[50px] gap-y-5">
-          <h3 className=" ~text-[1.25rem]/[2.625rem] font-semibold">
-            Do you need to see someone?
-          </h3>
+          <h3 className=" ~text-[1.25rem]/[2.625rem] font-semibold">Do you need to see someone?</h3>
           <p className="mt-2 text-fluid mx-auto max-w-[911px] text-center">
             If anxiety is impacting your life, don't hesitate to seek help.
             Contact a mental health professional for support and guidance.

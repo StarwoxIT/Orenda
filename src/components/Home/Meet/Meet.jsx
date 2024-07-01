@@ -1,7 +1,6 @@
 import React from "react";
 import "./Meet.css"
 import lifesavers from "../../../assets/lifesavers.png"
-import { NavLink } from 'react-router-dom';
 
 
 const Meet = () => {
@@ -13,11 +12,9 @@ const Meet = () => {
           <p>
             Take this assessment and we'll help pair you to the right provider.
           </p>
-          <NavLink to="/Assessment1">
-            <div>
-              <button>Take Assessment</button>
-            </div>
-          </NavLink>
+          <div>
+            <button>Take Assessment</button>
+          </div>
         </div>
         <div className="right">
           <img src={lifesavers} alt="" />
